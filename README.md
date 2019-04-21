@@ -14,7 +14,7 @@ action "Send Build Status" {
 ```
 
 ### Success
-Sends embed
+Sends an embed with the color code #2ECC71 and with the title "Passed"
 ```
 action "Send Build Status" {
   uses = "WalshyDev/Discord-Status-Webhook@master"
@@ -24,6 +24,7 @@ action "Send Build Status" {
 ```
 
 ### Fail
+Sends an embed with the color code #E74C3C and with the title "Failed"
 ```
 action "Send Build Status" {
   uses = "WalshyDev/Discord-Status-Webhook@master"
@@ -33,7 +34,7 @@ action "Send Build Status" {
 ```
 
 ### Custom Status
-Sends an embed with color code #00c8ff and with the title "Deployed Maven Artifact"
+Sends an embed with the color code #00c8ff and with the title "Deployed"
 ```
 action "Send Deployed Status" {
   uses = "WalshyDev/Discord-Status-Webhook@master"
